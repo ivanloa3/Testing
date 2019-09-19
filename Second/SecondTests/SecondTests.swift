@@ -31,4 +31,34 @@ class SecondTests: XCTestCase {
         // then
         XCTAssertTrue(suitability)
     }
+    
+    func testViewingHouseAddsOneToViewings() {
+        // given
+        let house = House2()
+        // when
+        house.conductOfViewing()
+        // then
+        XCTAssertEqual(house.numberOfViewings, 1)
+    }
+    
+    func testBuyerViewingHouseAddsOneToViewings() {
+        // given
+        let sut = Buyer()
+        let houseMock = HouseMock()
+        // when
+        sut.view(houseMock)
+        // then
+        XCTAssertEqual(houseMock.numberOfViewings, 1)
+        XCTAssertEqual(houseMock.wasCalledConductOfViewing, 1)
+    }
+}
+
+class HouseMock: House2Protocol {
+    var numberOfViewings = 0
+    var wasCalledConductOfViewing = 0
+    
+    func conductOfViewing() {
+        wasCalledConductOfViewing += 1
+        numberOfViewings += 1
+    }
 }
