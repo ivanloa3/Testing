@@ -9,12 +9,18 @@
 import Foundation
 
 class Buyer {
-    func view(_ house: House) {
+    func view(_ house: House2Protocol) {
         house.conductOfViewing()
     }
 }
 
-class House {
+
+protocol House2Protocol {
+    var numberOfViewings: Int {get set}
+    func conductOfViewing()
+}
+
+class House2: House2Protocol {
     var numberOfViewings = 0
     
     func conductOfViewing() {

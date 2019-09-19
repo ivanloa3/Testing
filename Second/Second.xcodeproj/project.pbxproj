@@ -11,6 +11,7 @@
 		1751857F231DB33B0052F4E3 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1751857E231DB33B0052F4E3 /* App.swift */; };
 		17518581231DB3E90052F4E3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17518580231DB3E90052F4E3 /* User.swift */; };
 		17518589231DB9800052F4E3 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17518588231DB9800052F4E3 /* AppTests.swift */; };
+		1758F0032333F1520095E3BC /* HouseBuyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758F0022333F1520095E3BC /* HouseBuyer.swift */; };
 		17800972231584880055C652 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17800971231584880055C652 /* AppDelegate.swift */; };
 		17800974231584880055C652 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17800973231584880055C652 /* ShareViewController.swift */; };
 		17800977231584880055C652 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17800975231584880055C652 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		17518586231DB9800052F4E3 /* AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17518588231DB9800052F4E3 /* AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTests.swift; sourceTree = "<group>"; };
 		1751858A231DB9800052F4E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1758F0022333F1520095E3BC /* HouseBuyer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseBuyer.swift; sourceTree = "<group>"; };
 		1780096E231584880055C652 /* Second.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Second.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17800971231584880055C652 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17800973231584880055C652 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,14 @@
 			path = AppTests;
 			sourceTree = "<group>";
 		};
+		1758F0012333F1430095E3BC /* Houses */ = {
+			isa = PBXGroup;
+			children = (
+				1758F0022333F1520095E3BC /* HouseBuyer.swift */,
+			);
+			path = Houses;
+			sourceTree = "<group>";
+		};
 		17800965231584880055C652 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +135,7 @@
 		17800970231584880055C652 /* Second */ = {
 			isa = PBXGroup;
 			children = (
+				1758F0012333F1430095E3BC /* Houses */,
 				1751857D231DB32B0052F4E3 /* App */,
 				17800971231584880055C652 /* AppDelegate.swift */,
 				17800973231584880055C652 /* ShareViewController.swift */,
@@ -292,6 +303,7 @@
 				17800974231584880055C652 /* ShareViewController.swift in Sources */,
 				1751857F231DB33B0052F4E3 /* App.swift in Sources */,
 				178009922315860F0055C652 /* House.swift in Sources */,
+				1758F0032333F1520095E3BC /* HouseBuyer.swift in Sources */,
 				17518581231DB3E90052F4E3 /* User.swift in Sources */,
 				17800972231584880055C652 /* AppDelegate.swift in Sources */,
 			);
